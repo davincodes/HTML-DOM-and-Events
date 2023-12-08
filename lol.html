@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Button Next to List with JavaScript</title>
+</head>
+<body>
+
+<!-- List -->
+<ul id="myList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<!-- Container for the button -->
+<div id="buttonContainer"></div>
+
+<script>
+    // Create a button element
+    var button = document.createElement("button");
+
+    // Set button text
+    button.innerHTML = "Click me";
+
+    // Set button click event
+    button.addEventListener("click", function() {
+        alert("Button clicked!");
+    });
+
+    // Get the container element where you want to append the button
+    var buttonContainer = document.getElementById("buttonContainer");
+
+    // Append the button to the container
+    buttonContainer.appendChild(button);
+</script>
+
+</body>
+</html>
